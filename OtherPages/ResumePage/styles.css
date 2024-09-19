@@ -1,0 +1,403 @@
+@keyframes close{
+    from{transform: translateX(0px);}
+    to{transform:translateX(-500px);
+    visibility: hidden;}
+}
+
+@keyframes openthis{
+    from{transform: translateX(-500px);}
+    to{transform:translateX(0px);}
+}
+
+
+/* For margin of top buttons */
+
+@keyframes margclose{
+  from{
+      margin-left: 300px;
+  }
+  to{ 
+      margin-left: 30px;
+  }
+}
+
+@keyframes margopen{
+  from{margin-left: 30px;}
+  to{margin-left:300px;}
+}
+
+@keyframes margclose01{
+  from{
+      margin-left: 150px;
+  }
+  to{ 
+      margin-left: 0px;
+  }
+}
+
+@keyframes margopen01{
+  from{margin-left: 0px;}
+  to{margin-left:150px;}
+}
+
+@keyframes writteninfoclose{
+  from{
+      margin-right: 170px;
+  }
+  to{ 
+      margin-right: 100px;
+  }
+}
+
+@keyframes writteninfoopen{
+  from{margin-right: 100px;}
+  to{margin-right:170px;}
+}
+
+#phoneview{
+    transform: translateY(200px);
+}
+
+
+#phoneview nav *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#phoneview nav a{
+    padding-left: 15px;
+}
+
+
+
+
+
+
+.avater{
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    bottom: 10px;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    /* Implement transition using @keyframe */
+
+}
+.avater:hover{
+    background-color: #dbdbdb;
+}
+/* animations here */
+.show{
+    animation-name: openthis;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+}
+
+.hidden{
+    /* visibility: hidden; */
+    animation-name: close;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.margshow{
+    animation-name: margopen;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.margclose{
+    animation-name: margclose;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+.margshow01{
+  animation-name: margopen01;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+.margclose01{
+  animation-name: margclose01;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+
+.writteninfoclose{
+  animation-name: writteninfoclose;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+}
+.writteninfoopen{
+  animation-name: writteninfoopen;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+
+}
+
+
+#overallstructure{
+    width: 100vw; }
+
+
+.boxtemplate{
+    margin: 10px;
+}
+
+/* NavBar */
+
+
+/* Sidebar */
+  
+#phoneview{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(108, 108, 108);
+    z-index: 1000;
+    margin-top: -10px;
+  }
+  
+  /* Creating the Menue Bar */
+  
+  .phonesidebar{
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    z-index: 1001;
+  
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .phonesidebar > ul{
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 25px;
+  }
+  
+  
+  
+  .menuehidden{
+    visibility: hidden;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  :root{
+    --color-1: #0f1016;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+  }
+
+
+  nav{
+    height: 100vh;
+    background-color: var(--color-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .links-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a{
+      width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  nav a:hover{
+    background-color: var(--accent-color);
+  }
+  nav .home-link{
+    margin-right: auto;
+  }
+  nav svg{
+    fill: var(--text-color);
+  }
+  #sidebar-active{
+    display: none;
+  }
+  .open-sidebar-button, .close-sidebar-button{
+    display: none;
+  }
+  
+  
+  .phonefontsize{
+    font-size: 15px;
+  }
+  
+  #phoneadjustment50px{
+    left: 10px;
+  }
+
+
+
+/* important styles */
+*{
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+#animatethis0:hover{
+    height: 710px;
+    transition: all 1000ms;
+}
+
+#animatethis0{
+    height: 150px;
+    transition: all 1000ms;
+}
+#animatethis01{
+    height: 150px;
+    transition: all 1000ms;
+}
+
+#animatethis01:hover{
+    height: 340px;
+    transition: all 1000ms;
+}
+
+#animatethis02{
+    height: 150px;
+    transition: all 1000ms;
+}
+
+#animatethis02:hover{
+    height: 340px;
+    transition: all 1000ms;
+}
+
+
+#animatethis {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#whitetext *{
+    color: white;
+}
+
+.button:hover{
+    background-color: #fd805a;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 98%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+#turnthese{
+    position: absolute; width: 120px; height: 20px; right: 100px;
+    transform: translateY(-15px) rotate(9deg);
+    transition: all 500ms;
+}
+
+#turnthese:hover{
+    position: absolute; width: 120px; height: 20px; background-color: rgb(163, 163, 163); right: 100px;
+    transform: rotate(20deg);
+    transition: all 500ms;
+}
+
+/* Maze Solving */
+
+.main_maze{
+    display: grid;
+    gap: 2px;
+    margin-left: 10vh;
+
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+.divhere{
+    background-color: rgb(213, 213, 213);
+    border-radius: 2px;
+}
+
+.active{
+    background-color: rgb(0, 0, 0);
+}
+
+.pathhere{
+    background-color: rgb(96, 234, 255);
+}
+
+#lilcapaimg{
+    width: 500px;
+    transition: all 800ms;
+}
+
+#lilcapaimg:hover{
+    width: 550px;
+    transition: all 800ms;
+}
+
+
+#threedgraphics{
+    border-radius: 10px;
+    width: 400px;
+    transition: all 800ms;
+}
+
+#threedgraphics:hover{
+    border-radius: 120px;
+    width: 430px;
+    transition: all 800ms;
+}
