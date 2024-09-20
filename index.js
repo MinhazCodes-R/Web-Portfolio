@@ -1,11 +1,19 @@
 
 window.addEventListener('load', function(){
     const textInput = document.getElementById("textInput");
+    let canvas;
 
-    const canvas = document.getElementById('canvas1');
+    if(document.documentElement.clientWidth<460){
+        canvas = document.getElementById('canvasphone');
+        canvas.height = 100;
+    }
+    else{
+        canvas = document.getElementById('canvas1');
+        canvas.height = 300;
+    }
+    canvas.width = document.documentElement.clientWidth;
+    
     const ctx = canvas.getContext('2d');
-    canvas.width = document.documentElement.clientWidth
-    canvas.height = 300;
 
     var adjustmentx = 0;
     var adjustmenty = 50;
@@ -82,7 +90,7 @@ window.addEventListener('load', function(){
             this.mouse = {
                 radius: 100000,
                 x: 0,
-                y: 0
+                y: 1000
             }
             window.addEventListener('mousemove', (e) =>{
                 this.mouse.x = e.x;
@@ -177,52 +185,60 @@ window.addEventListener('load', function(){
 
     var layoutboolean = true;
 
-    document.querySelector(".avater").addEventListener('click',()=>{
-        //naturaly hidden
-        document.querySelector("#phoneview").classList.toggle('hidden');
-        document.querySelector("#phoneview").classList.toggle('show');
+    this.document.querySelectorAll(".avater").forEach( avatarelem =>{
+        avatarelem.addEventListener('click', ()=>{
+            this.document.querySelectorAll("#phoneview").forEach(listelem =>{
+                listelem.classList.toggle('hidden');
+                listelem.classList.toggle('show');
+            })
 
-        document.querySelector("#profilepicture").classList.toggle('margclose');
-        document.querySelector("#profilepicture").classList.toggle('margshow');
-        //For top buttons
+            this.document.querySelectorAll("#profilepicture").forEach(listelem =>{
+                listelem.classList.toggle('margclose');
+                listelem.classList.toggle('margshow');
+            })
 
-        document.querySelector("#buttonsmade01").classList.toggle('margclose');
-        document.querySelector("#buttonsmade01").classList.toggle('margshow');
 
-        document.querySelector("#writtencontactinfo01").classList.toggle('writteninfoclose');
-        document.querySelector("#writtencontactinfo01").classList.toggle('writteninfoopen');
+            if (this.document.body.clientWidth > 450){
 
-        document.querySelector('#canvas1').classList.toggle('margclose01');
-        document.querySelector('#canvas1').classList.toggle('margshow01');
-
-        document.querySelectorAll('.boxtemplate').forEach(listelem =>{
-            listelem.classList.toggle('margclose01')
-        });
-        document.querySelectorAll('.boxtemplate').forEach(listelem =>{
-            listelem.classList.toggle('margshow01')
-        });
-
-        //boxtemplate
-
-        if (document.querySelector('#canvas1').classList.contains('margclose01')){
-            adjustmentx = 0;
-        }
-        else{
-            adjustmentx = 180;
-        }
-
-        
-        // if (layoutboolean) {
-        //     document.getElementById("overallstructure").style.gridTemplateColumns = "0px 1fr";
-        //     layoutboolean = false;
-        // }
-        // else{
-        //     document.getElementById("overallstructure").style.gridTemplateColumns = "280px 1fr";
-        //     layoutboolean = true;
-        // }
+                this.document.querySelectorAll("#buttonsmade01").forEach(listelem =>{
+                    listelem.classList.toggle('margclose');
+                    listelem.classList.toggle('margshow');
+                })
     
+                this.document.querySelectorAll("#writtencontactinfo01").forEach(listelem =>{
+                    listelem.classList.toggle('writteninfoclose');
+                    listelem.classList.toggle('writteninfoopen');
+                })
+
+                document.querySelector('#canvas1').classList.toggle('margclose01');
+                document.querySelector('#canvas1').classList.toggle('margshow01');
+
+                document.querySelectorAll('.boxtemplate').forEach(listelem =>{
+                    listelem.classList.toggle('margclose01')
+                });
+                document.querySelectorAll('.boxtemplate').forEach(listelem =>{
+                    listelem.classList.toggle('margshow01')
+                });
+
+                //boxtemplate
+
+                if (document.querySelector('#canvas1').classList.contains('margclose01')){
+                    adjustmentx = 0;
+                }
+                else{
+                    adjustmentx = 180;
+                }
+            }
+
+
+            
+
+
+        })
     })
 
+
+    
 
 })
 

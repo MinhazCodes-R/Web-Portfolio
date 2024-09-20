@@ -1,3 +1,7 @@
+.phoneview{
+  display: none;
+}
+
 @keyframes close{
     from{transform: translateX(0px);}
     to{transform:translateX(-500px);
@@ -201,7 +205,7 @@ transition: all 400ms ease-out;
 
     /* Implement transition using @keyframe */
 
-}x
+}
 .avater:hover{
     background-color: #dbdbdb;
 }
@@ -320,10 +324,7 @@ transition: all 400ms ease-out;
     margin: 0;
     padding: 0;
   }
-  html{
-    font-size: 12pt;
-    font-family: Poppins, Segoe UI, Tahoma, sans-serif;
-  }
+
   nav{
     height: 100vh;
     background-color: var(--color-1);
