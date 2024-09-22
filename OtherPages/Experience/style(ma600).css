@@ -1,6 +1,8 @@
-.phoneview{
-  display: none;
+.monitorview{
+    display: none;
 }
+
+
 @keyframes close{
     from{transform: translateX(0px);}
     to{transform:translateX(-500px);
@@ -70,6 +72,9 @@
 
 #phoneview nav a{
     padding-left: 15px;
+}
+body{
+    overflow-x: hidden;
 }
 
 
@@ -265,42 +270,64 @@
 }
 
 #animatethis0:hover{
-    height: 710px;
+    height: 950px;
     transition: all 1000ms;
+    border-radius: 10px;position: relative;width: 95%; background-color: rgb(70, 70, 70);padding: 10px; display: inline-block; overflow: hidden;border: solid black; position: relative;
 }
 
 #animatethis0{
     height: 150px;
     transition: all 1000ms;
+    border-radius: 10px;position: relative;width: 95%; background-color: rgb(70, 70, 70);padding: 10px; display: inline-block; overflow: hidden;border: solid black; position: relative;
 }
 #animatethis01{
     height: 150px;
     transition: all 1000ms;
+    border-radius: 10px;position: relative;width: 95%; background-color: rgb(116, 116, 116);padding: 10px; display: inline-block; overflow: hidden;border: solid black; position: relative;
 }
 
 #animatethis01:hover{
-    height: 340px;
+    height: 550px;
     transition: all 1000ms;
+    border-radius: 10px;position: relative;width: 95%; background-color: rgb(116, 116, 116);padding: 10px; display: inline-block; overflow: hidden;border: solid black; position: relative;
 }
 
 #animatethis02{
     height: 150px;
     transition: all 1000ms;
+    border-radius: 10px;position: relative;width: 95%; background-color: rgb(255, 255, 255);padding: 10px; display: inline-block; overflow: hidden;border: solid black; position: relative;
+
+    
 }
 
 #animatethis02:hover{
     height: 340px;
     transition: all 1000ms;
+    border-radius: 10px;position: relative;width: 95%; background-color: rgb(255, 255, 255);padding: 10px; display: inline-block; overflow: hidden;border: solid black; position: relative;
 }
 
 
 #animatethis {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+#whitetext{
+    position: relative;width: 90%;height: 150px;border-radius: 10px; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 
 #whitetext *{
     color: white;
+
 }
+
+#whitetext01{
+    position: relative;width: 90%;height: 150px;border-radius: 10px; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#whitetext01 *{
+    color: black;
+}
+
+
 
 .button:hover{
     background-color: #fd805a;
@@ -347,13 +374,14 @@
 
 
 #turnthese{
-    position: absolute; width: 120px; height: 20px; right: 100px;
+    position: absolute; width: 120px; height: 20px; right: 5px;
     transform: translateY(-15px) rotate(9deg);
     transition: all 500ms;
 }
 
 #turnthese:hover{
-    position: absolute; width: 120px; height: 20px; background-color: rgb(163, 163, 163); right: 100px;
+    position: absolute; width: 120px; height: 20px; right: 5px;
+    background-color: rgb(163, 163, 163);
     transform: rotate(20deg);
     transition: all 500ms;
 }

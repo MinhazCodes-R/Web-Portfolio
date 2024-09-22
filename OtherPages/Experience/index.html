@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Document</title>
     <!-- Font 01 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,8 @@
     <!-- fonts 02 -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 501px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="style(ma600).css">
     <style>
         body{
             background-color: black;
@@ -20,6 +21,10 @@
     </style>
 </head>
 <body>
+
+<div class="monitorview">
+
+
 
     <div class="avater margclose" id="profilepicture" style="display: flex;align-items: center;justify-content: center;">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
@@ -264,6 +269,130 @@
 
 
     </div>
+
+</div>
+
+    <!-- PHONE VIEW STARTS HERE ------------------------------------------------------------------------------------------- -->
+
+<div class="phoneview">
+
+    <div class="avater margclose" id="profilepicture" style="display: flex;align-items: center;justify-content: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+          <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+        </svg>
+        
+    </div>
+    <div id="phoneview" style="position: fixed;" class="hidden">
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <a href="../../index.html">Home</a> 
+            <a href="../Experience/index.html">Experience</a> 
+            <a href="../ResumePage/index.html">Resume</a>
+            <a href="../OtherPages/Resources.html">Skills</a>
+
+            
+        </nav>
+    </div>
+    
+    <div id="phonemenuebar" style="display: none;"><svg></svg>
+    </div>
+
+    <div style="position: relative; background-color: rgb(0, 0, 0);">
+        <h1 style="color: white; font-size: 30px; margin-left: 20px;">WORK EXPERIENCE</h1>
+        <div id="turnthese" style="justify-content: center; background-color: yellow; z-index: 2"> CLICK HERE</div>
+
+        <div id="animatethis0">
+    
+            <div id="whitetext">
+                <div><span><b style="font-size: 17px; color: white;">Job Title: </b>Web Developer</span></div>
+                <div><span><b style="font-size: 17px;">Date: </b>June - September 2024</span> </div>
+                <div></div>
+                <div style="grid-column-start: span 2; margin-top: 30px;"><b style="font-size: 17px;">Locations: </b>Scarborough, Ontario</div>
+                <div style="grid-column-start: span 3;margin-top: 15px;"><b style="font-size: 17px;">Company: </b> Baitul Jannah Islamic Center</div>
+                
+                </div>
+            <div style="margin-left: 1px;position: relative;top:10px;width: 90%; background-color: rgb(255, 255, 255);margin-top: 10px; border: solid black;border-radius: 10px;padding: 20px;">
+                Working at Baitul Jannah Islamic Center (BJIC) has been a valuable learning experience. It allowed me to develop professional web development skills, especially as I transitioned from little experience to constructing functional and well-designed websites. Despite the steep learning curve, I embraced the challenge by adhering to a structured routine and holding myself accountable, which enabled me to significantly advance my skills within just two months.
+                <p></p>
+                <a href="https://bjic.org/"><button class="button"><span>Click To Visit </span></button></a>
+                <p></p>
+                Much of my learning during my time at BJIC was self-directed, but in addition I also had to balance four summer courses while meeting deadlines set by my managers. This experience taught me how to effectively manage my time, prioritize tasks, and stay disciplined in a high-demand environment.
+
+                <p></p>
+                    <b>Languages: Javascript, HTML, CSS, BootStrap, JQuery, NodeJS</b>
+                    <p></p>
+                    GoDaddy was used for the domain and Netlify for the deployment.
+                    <p></p>
+
+                    <b>Future Goals: </b>
+                    <p></p>
+                    <ul>
+                        <li>Implement an account system (Login and safe data tracking)</li>
+                        <li>Phone app which sends reminders and news notification</li>
+                        <li>Monthly mail to email for important announcement</li>
+                    </ul>
+
+            </div>
+    
+        </div>
+        <div style="height: 20px;"></div>
+        <div id="turnthese" style="justify-content: center; background-color: lightblue; z-index: 2"> CLICK HERE</div>
+
+        <div id="animatethis01">
+    
+            <div id="whitetext">
+                <div><span><b style="font-size: 17px;">Job Title: </b>Tutor</span></div>
+                <div><span><b style="font-size: 17px;">Date: </b>January - June 2024</span> </div>
+
+                <div style="grid-column-start: span 2;margin-top: 30px;"><b style="font-size: 17px;">Locations: </b>Scarborough, Ontario</div>
+                <div style="grid-column-start: span 2; margin-top: 15px;"><b style="font-size: 17px;">Company: </b>Freelance Work</div>
+                
+            </div>
+            <div style="margin-left: 1px;position: relative;top:10px;width: 90%; background-color: rgb(255, 255, 255);margin-top: 10px; border: solid black;border-radius: 10px;padding: 20px;">
+                As a tutor for math and English, I worked with students from elementary to high school, helping them achieve academic success. My role involved creating customized lesson plans tailored to each student's unique learning style, ensuring that they grasp key concepts and progress at their own pace. I fostered a supportive learning environment by providing personalized feedback and addressing specific areas where students struggled. Additionally, I took the initiative to communicate with teachers for students who needed extra attention, collaborating to ensure they received the necessary support for improving their grades. Through this approach, I was able to help students not only meet but exceed their academic goals, building their confidence and skills along the way.
+
+            </div>
+    
+        </div>
+
+
+        <div style="height: 20px;"></div>
+        <div id="turnthese" style="justify-content: center; background-color: rgb(109, 203, 134); z-index: 2;"> CLICK HERE</div>
+
+        <div id="animatethis02" >
+    
+            <div id="whitetext01">
+                <div><span><b style="font-size: 17px; color: rgb(0, 0, 0);">Job Title: </b><p style="margin-top: 0;">Sales Associate</p></span></div>
+                <div><span><b style="font-size: 17px;">Date: </b>August - September 2023</span> </div>
+                <div></div>
+                <div style="grid-column-start: span 2; margin-top: 10px;"><b style="font-size: 17px;">Locations: </b>Scarborough, Ontario</div>
+                <div style="grid-column-start: span 3;margin-top: 15px;"><b style="font-size: 17px;">Company: </b> Winners</div>
+
+                
+            </div>
+            <div style="position: absolute;top: 180px;width: 90%; background-color: rgb(255, 255, 255);margin-top: 10px; border: solid black;border-radius: 10px;padding: 20px;">
+                As a Sales Associate at Winners, I was responsible for delivering excellent customer service while maintaining a well-organized and visually appealing store environment. I assisted customers in finding products that suited their needs, offering personalized recommendations to enhance their shopping experience. My role also included managing inventory, processing transactions efficiently, and ensuring that merchandise was displayed in an attractive and accessible manner. Additionally, I worked closely with my team to meet sales targets, while consistently adhering to company policies and maintaining a high level of professionalism. This experience allowed me to develop strong communication, time management, and problem-solving skills, which are essential for success in any customer-facing role.
+
+            </div>
+    
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
