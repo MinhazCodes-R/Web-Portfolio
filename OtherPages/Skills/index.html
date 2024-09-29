@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Minhaz's Portfolio</title>
     <!-- Font 01 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +18,12 @@
 </head>
 <body>
 
+
+    
     <div class="avater margclose" id="profilepicture" style="display: flex;align-items: center;justify-content: center;">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
-          <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-          <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
+            <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
         </svg>
         
     </div>
@@ -29,33 +31,102 @@
         <nav>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </label>
             <label id="overlay" for="sidebar-active"></label>
             <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </label>
-            <a href="./index.html">Home</a> 
-            <a href="./OtherPages/Experience/index.html">Experience</a> 
-            <a href="./OtherPages/ResumePage/index.html">Resume</a>
-            <a href="./OtherPages/Resources.html">Skills</a>
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a href="./index.html">Home</a> 
+                <a href="./OtherPages/Experience/index.html">Experience</a> 
+                <a href="./OtherPages/ResumePage/index.html">Resume</a>
+                <a href="./OtherPages/Resources.html">Skills</a>
+                
+                
+            </nav>
+        </div>
+        
+        <div id="phonemenuebar" style="display: none;"><svg></svg>
+        </div>
+        
+        
+        
+        
+        
+        <div class="monitorview">
+            <div style="width: 80%; padding: 20px; background-color: white; border-radius: 10px; margin-left: auto; margin-right: auto; margin-top: 100px;">
+                <div class="container">
 
-            
-        </nav>
-    </div>
+                    <div class="row">
+                        <div class="col-md"><h2>Programming</h2></div>
+                        <div class="col-md">
+                            <ul>
+                                <li>Javascript, CSS, HTML</li>
+                                <li>PHP</li>
+                                <li>Python</li>
+                                <li>C, C++, C#</li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <div id="phonemenuebar" style="display: none;"><svg></svg>
-    </div>
+
+                </div>
+                
+            </div>
+            <div style="width: 80%; background-color: white; border-radius: 10px;margin-top: 20px; padding: 20px; margin-left: auto; margin-right: auto; ">
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md"> <h2>CAD</h2></div>
+                        <div class="col-md">
+
+                            <ul>
+                                <li>AutoCad</li>
+                                <li>Inventor</li>
+                                <li>SolidWorks</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
     
 
-    <div style="width: 80%; height: 200px; background-color: white; border-radius: 10px; margin-left: auto; margin-right: auto; margin-top: 100px;"></div>
+        </div>
+    
+    
+        <div class="phoneview">
+            <div style="width: 80%; background-color: white; border-radius: 10px; margin-left: auto; margin-right: auto; margin-top: 100px; padding: 20px;">
+                <h2>Programming</h2>
+                <ul>
+                    <li>Javascript, CSS, HTML</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>C, C++, C#</li>
+                </ul>
 
 
+            </div>
+            <div style="width: 80%; background-color: white; border-radius: 10px; margin-left: auto; margin-right: auto;margin-top: 20px; padding: 20px;">
+                <h2>CAD</h2>
+                <ul>
+                    <li>AutoCad</li>
+                    <li>Inventor</li>
+                    <li>SolidWorks</li>
+                </ul>
 
 
-
-
+            </div>
+        </div>
+        
+        
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="./index.js"></script>

@@ -1,3 +1,7 @@
+.phoneview{
+  visibility: hidden;
+}
+
 @keyframes close{
     from{transform: translateX(0px);}
     to{transform:translateX(-500px);
