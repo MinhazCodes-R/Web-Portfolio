@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Document</title>
     <!-- Font 01 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,8 @@
     <!-- fonts 02 -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 501px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="style(ma600).css">
     <style>
         body{
             background-color: black;
@@ -23,10 +24,9 @@
 <body>
 
     <div class="avater margclose" id="profilepicture" style="display: flex;align-items: center;justify-content: center;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
-          <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-          <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
         
     </div>
     <div id="phoneview" style="position: fixed;" class="hidden">
@@ -52,6 +52,21 @@
     <div id="phonemenuebar" style="display: none;"><svg></svg>
     </div>
 
+    <div class="phoneview">
+
+        <div style="position: relative; background-color: rgb(37, 37, 37); padding: 1px 0 30px 0; padding-left: 100px; top: 0;">
+            <h1 style="color: rgb(255, 255, 255); margin-top: 20px;">RESUME</h1>
+    
+           
+    
+        </div>
+
+        <div style="width: auto; background-color: rgb(0, 0, 0); margin: 50px; display: flex; justify-content: center; padding: 10px;">
+            <img src="./MinhazresumeScreenshot.png" width="150%" style="" alt="">
+        </div>
+
+
+    </div>
     <div class="monitorview">
 
         <div style="position: relative; background-color: rgb(37, 37, 37); padding: 1px 0 30px 0; padding-left: 100px;">
@@ -61,12 +76,13 @@
     
         </div>
 
-        <div style="width: auto; background-color: white; margin: 50px; display: flex; justify-content: center;">
-            <img src="./MinhazresumeScreenshot.png" width="auto" style="" alt="">
+        <div style="width: auto; background-color: rgb(0, 0, 0); margin: 50px; display: flex; justify-content: center;">
+            <img src="./MinhazresumeScreenshot.png" width="70%" style="" alt="">
         </div>
 
 
     </div>
+    
         
 
     
